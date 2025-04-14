@@ -2,7 +2,7 @@ MONGODB_HOST: mongodb.devopsify.space
 CATALOGUE_HOST: catalogue.devopsify.space
 REDIS_HOST: redis.devopsify.spcae
 USER_HOST: user.devopsify.space
-CART_HOST: cart.devopsify.spcae
+CART_HOST: cart.devopsify.space
 RABBITMQ_HOST: rabbitmq.devopsify.space
 PAYMENT_HOST: payment.devopsify.space
 DISPATCH_HOST: dispatch.devopsify.space
