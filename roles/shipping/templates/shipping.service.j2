@@ -1,11 +1,10 @@
 [Unit]
 Description=Shipping Service
-After=network.target
 
 [Service]
 User=roboshop
-Environment=CART_ENDPOINT={{CART_HOST}}:8080
-Environment=DB_HOST={{MYSQL_HOST}}
+Environment=CART_ENDPOINT=CART_HOST:8080
+Environment=DB_HOST=MYSQL_HOST
 ExecStart=/bin/java -jar /app/shipping.jar
 SyslogIdentifier=shipping
 
