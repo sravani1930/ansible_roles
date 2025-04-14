@@ -15,10 +15,10 @@
   ansible.builtin.debug:
    msg: "schema output: {{schema}}"
 
-# - name: touch the file
-#   ansible.builtin.file:
-#    path: /app/schema/{{component}}.sql"
-#    state: touch 
+- name: touch the file
+  ansible.builtin.file:
+   path: "/app/schema/{{component}}.sql"
+   state: touch 
 
 - name: load schema
   ansible.builtin.shell: "mysql -h {{MYSQL_HOST}} -uroot -p{{mysql_password}} < /app/schema/{{component}}.sql" 
