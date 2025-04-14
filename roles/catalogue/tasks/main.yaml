@@ -3,27 +3,8 @@
    name: common
    tasks_from: nodejs
 
-- name: appsetup
-  ansible.builtin.import_role:
-   name: common
-   tasks_from: appsetup
-
-- name: Copy catalogue service
-  ansible.builtin.copy:
-   src: catalogue.service
-   dest: /etc/systemd/system/catalogue.service
-
-- name: deamon realod and start
-  ansible.builtin.systemd_service:
-   daemon_reload: true
-
-- name: mongodb setup
-  ansible.builtin.import_role:
-   name: common
-   tasks_from: mongodb-setup
 
 
 
 
 
-  
