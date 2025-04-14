@@ -1,0 +1,17 @@
+- name: appsetup
+  ansible.builtin.import_role:
+   name: common
+   tasks_from: app-setup
+- name: python
+  ansible.builtin.import_role:
+   name: common
+   tasks_from: python
+
+- name: systemd
+  ansible.builtin.import_role:
+   name: common
+   tasks_from: systemd
+
+
+
+
