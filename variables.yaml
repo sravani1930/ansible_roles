@@ -7,6 +7,6 @@ RABBITMQ_HOST: rabbitmq.devopsify.space
 PAYMENT_HOST: payment.devopsify.space
 DISPATCH_HOST: dispatch.devopsify.space
 MYSQL_HOST: mysql.devopsify.space
-SHIPPING_HOST: shipping.devoopsify.space
+SHIPPING_HOST: shipping.devopsify.space
 
 
