@@ -1,8 +1,7 @@
-- name: nodejs
+- name: node js
   ansible.builtin.import_role:
-   name: common
-   tasks_from: nodejs
-
+    name: common
+    tasks_from: nodejs
 
 
 
